@@ -4,7 +4,7 @@ WORKDIR '/opt/app'
 
 COPY package.json .
 RUN npm config set registry http://registry.npmjs.org/
-RUN npm config set proxy "http://yuzdze-c-32001.europe.shell.com:8080"
+#RUN npm config set proxy "http://yuzdze-c-32001.europe.shell.com:8080"
 RUN npm install
 
 COPY . .
